@@ -1,0 +1,19 @@
+let Animal = function (name, weight) {
+    this.name = name;
+    this.weight = weight;
+    this.getName = function () {
+        return this.name;
+    }
+    this.getWeight = function () {
+        return this.weight;
+    }
+    this.setName = function (name) {
+        this.name = name
+    }
+    this.setWeight = function (weight) {
+        this.weight = weight;
+    }
+    this.toString = function () {
+        return this.name + ' : ' + this.weight;
+    }
+}

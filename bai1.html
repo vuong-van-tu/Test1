@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function giaiPhuongTrinhBacNhat(a, b) {
+        if (a == 0) {
+            if (b !== 0) {
+                return "Phương trình không phải phương trình bậc nhất "
+            } else {
+                return "Phương trình có vô số nghiệm"
+            }
+        } else {
+            return 'Phương trình có nghiệm là x= ' + -b/a;
+        }
+    }
+    let a = +prompt("Nhập a : ")
+    let b = +prompt("Nhập b : ")
+    document.write(giaiPhuongTrinhBacNhat(a,b))
+
+
+
+</script>
+</body>
+</html>
